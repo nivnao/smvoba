@@ -1,0 +1,28 @@
+<svg width="503" height="478" viewBox="0 0 503 478" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_1302_1570)">
+<ellipse cx="367.15" cy="135.542" rx="13.2108" ry="13.2647" transform="rotate(45 367.15 135.542)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2177" cy="13.2578" rx="13.2177" ry="13.2578" transform="matrix(0.405534 0.91408 -0.91297 0.408027 407.782 167.41)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2352" cy="13.2403" rx="13.2352" ry="13.2403" transform="matrix(0.0451938 0.998978 -0.998787 0.0492491 427.452 230.002)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.254" cy="13.2216" rx="13.254" ry="13.2216" transform="matrix(-0.318007 0.948088 -0.94912 -0.314913 423.169 295.309)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2643" cy="13.2112" rx="13.2643" ry="13.2112" transform="matrix(-0.63902 0.76919 -0.76967 -0.638442 395.563 354.709)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2606" cy="13.2149" rx="13.2606" ry="13.2149" transform="matrix(-0.87436 0.485277 -0.483383 -0.875409 347.859 400.592)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.245" cy="13.2306" rx="13.245" ry="13.2306" transform="matrix(-0.990689 0.136147 -0.132251 -0.991216 287.442 425.797)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2256" cy="13.2499" rx="13.2256" ry="13.2499" transform="matrix(-0.9733 -0.229538 0.233081 -0.972457 222.119 427.53)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2125" cy="13.263" rx="13.2125" ry="13.263" transform="matrix(-0.823156 -0.567816 0.569003 -0.822336 160.698 405.63)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2127" cy="13.2628" rx="13.2127" ry="13.2628" transform="matrix(-0.56148 -0.82749 0.826647 -0.562721 111.268 362.752)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2262" cy="13.2494" rx="13.2262" ry="13.2494" transform="matrix(-0.218781 -0.975774 0.974962 -0.222372 80.6521 304.429)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2455" cy="13.23" rx="13.2455" ry="13.23" transform="matrix(0.14697 -0.989141 0.989708 0.143105 73.4343 239.49)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2608" cy="13.2147" rx="13.2608" ry="13.2147" transform="matrix(0.491866 -0.870671 0.871708 0.490025 89.6082 177.171)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2642" cy="13.2113" rx="13.2642" ry="13.2113" transform="matrix(0.774067 -0.633104 0.632475 0.774581 128.392 123.288)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2535" cy="13.222" rx="13.2535" ry="13.222" transform="matrix(0.951557 -0.307474 0.304318 0.952571 184.154 87.1777)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2348" cy="13.2407" rx="13.2348" ry="13.2407" transform="matrix(0.998623 0.0524587 -0.0565064 0.998402 247.35 74.0068)" fill="black" fill-opacity="0.12"/>
+<ellipse cx="13.2174" cy="13.2581" rx="13.2174" ry="13.2581" transform="matrix(0.911002 0.412401 -0.414844 0.909893 312.487 84.6855)" fill="black" fill-opacity="0.12"/>
+</g>
+<defs>
+<filter id="filter0_f_1302_1570" x="67.7354" y="67.1826" width="367.828" height="368.043" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="3.75" result="effect1_foregroundBlur_1302_1570"/>
+</filter>
+</defs>
+</svg>
