@@ -1,7 +1,7 @@
 body {
     top: 0;
     left: 0;
-    position: relative;
+    /* position: relative; */
     width: 100vw;
     height: 100vh;
     background-color: #E5E5E5;
@@ -9,7 +9,6 @@ body {
     box-sizing: border-box;
     cursor: url(../images/cursor.svg) 1 1, auto;
 }
-
 a {
     text-decoration: none;
     color: #000;
@@ -528,7 +527,7 @@ span {
     width: 100vw;
     height: 58vw;
     background-image: url(../images/posterback.svg);
-    background-size: 100vw 100vh;
+    background-size: contain;
     box-sizing: border-box;
 }
 .postersheader {
@@ -541,8 +540,9 @@ span {
     transform: scale(-1, 1);
     margin-top: 2vw;
 }
-.postersheader img:hover{
-    animation: arrowmove 0.2s linear forwards;
+
+.postersheader:hover  {
+    color: #01FB29;
     cursor: url(../images/cursor.svg), auto;
 }
 .postersheader p {
@@ -553,6 +553,7 @@ span {
     margin-left: 1vw;
     width: 18vw;
 }
+
 .postersbody {
     position: relative;
     width: 71vw;
@@ -562,26 +563,33 @@ span {
 }
 .postp1 {
     top: 0;
-    left: 0;
+    left: -4vw;
     position: absolute;
     z-index: 4;
     width: 36vw;
-    height: 1000px;
+    transition: 1s;
+}
+.postp1:hover {
+    z-index: 5;
+    top: -3vw;
+    transform: scale(1.2);
 }
 .postp1 img {
     position: fixed;
     width: 36vw;
     height: 40vw;
-    animation-name: postpmove1;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-    animation-timeline: scroll(); 
+; 
 }
 .postp2 {
     top: 10vw;
     left: 24vw;
     position: absolute;
     z-index: 3;
+    transition: 1s;
+}
+.postp2:hover {
+    z-index: 5;
+    transform: scale(1.5);
 }
 
 .postp2 img {
@@ -593,6 +601,11 @@ span {
     left: 35vw;
     position: absolute;
     z-index: 2;
+    transition: 1s;
+}
+.postp3:hover {
+    z-index: 5;
+    transform: scale(1.6);
 }
 
 .postp3 img {
@@ -605,10 +618,15 @@ span {
     left: 43vw;
     position: absolute;
     z-index: 1;
+    transition: 1s;
 }
 .postp4 img {
     width: 8vw;
     height: 13vw;
+}
+.postp4:hover {
+    z-index: 5;
+    transform: scale(2.5);
 }
 
 /* стили для пространства и путеводителя */
@@ -732,54 +750,180 @@ span {
 }
 .photorow {
     display: flex;
-    width: 100%;
-    height: 10.3vw;
-    margin-top: 2vw;
+    width: 800vw;
+    margin-top: 2vw ;
+    height: 40vw;
     justify-content: space-between;
-}
-.photoblock {
-    display: flex;
-    margin-top: 1vw;
-    width: 100vw;
-    height: 30vw;
-    justify-content: center;
-    align-items: baseline;
-}
-#photoview {
-    margin-left: 1vw;
-    width: 45vw;
-    height: 30vw;
-}
-#photoname {
-    width: 15vw;
-    height: 8.2vw;
-    margin-left: 3vw;
+    overflow-x: hidden;
+    align-items: center;
+    animation: photoscroll 45s infinite linear;
 }
 
+.photorow:hover{
+    animation-play-state: paused;
+}
+
+
 #pic {
-    width: 100%;
-    height: 8.2vw;
+    width: 40vw;
+    height: 25vw;
     padding: 0.2vw;
+}
+
+#pic img {
+    width: 100%;
+    height: 25vw;
 }
  
 #pic:hover {
-    transform: scale(1.1);
-    border-style: solid;
-    border-color: #01FB29;
-    border-width: 0.2vw;
-    
+    transform: scale(1.5);
 }
 
-/* стили для магазиан */
-shop {
+/* стили для путеводиетля */
+
+#book {
     top: 0;
     left: 0;
+    width: 100%;
+    height: 2615px;
+    position: fixed;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: #CECECE;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+#bookheader {
+    position: sticky;
+    left: 2vw;
+    top: 2vw;
+    z-index: 4;
+}
+
+#photospace {
+    width: 35vw;
+    height: 20vw;
+}
+
+.photobook1 img,
+.photobook2 img,
+.photobook3 img {
+    width: 50vw;
+    height: 30vw;
+}
+
+#photobook {
+    margin: auto;
+    width: 45vw;
+    height: 30vw;
+}
+
+.photobook1 {
     position: absolute;
+    top: 55vw;
+    left: 25vw;
+    animation: photomovebook1 1.5s linear forwards;
+}
+
+.photobook2 {
+    position: absolute;
+    top: 75vw;
+    left: 20vw;
+    animation: photomovebook2 2s linear forwards;
+    animation-delay: 1s;
+}
+
+.photobook3 {
+    position: absolute;
+    top: 70vw;
+    left: 29vw;
+    animation: photomovebook3 2s linear forwards;
+    animation-delay: 2s;
+}
+#bookbutt {
+    position: absolute;
+    top: 45vw;
+    left: 75vw;
+}
+
+/* стили для магазина */
+#shop {
+    top: 0;
+    left: 0;
+    background-color: #CCCCCC;
+    position: relative;
+}
+
+.form {
+    position: absolute;
+    top: 17vw;
+    left: 38vw;
+    width: 24vw;
+    height: 20vw;
+    z-index: 6;
+    background-color: #5d5d5d;
+    border-radius: 2%;
+    opacity: 90%;
+    display: none;
+}
+.mainalert {
+    position: absolute;
+    top: 17vw;
+    left: 38vw;
+    width: 24vw;
+    height: 20vw;
+    z-index: 6;
+    background-color: #5d5d5d;
+    border-radius: 2%;
+    opacity: 90%;
+    display: none;
+}
+.mainalert p {
+        font-family: 'PP Neue Montreal';
+        font-size: 1.2vw;
+        color: #ffffff;
+        position: relative;
+        top: 8vw;
+        left: 2vw ;
+        width: 20vw;
+        text-align: center;
+}
+.cross {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    opacity: 80%;
+    width: 7vw;
+    height: 7vw;
+}
+
+.maininfo {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    margin: auto;
+    width: 20vw;
+    height: 20vw;
+    margin-top: 2vw;
 }
+#butt {
+    margin-top: 2vw;
+    margin-left: 1.6vw;
+}
+
+#line1,
+#line2,
+#line3 {
+    font-family: 'PP Neue Montreal';
+    font-size: 1.2vw;
+    color: #999898;
+    padding-top: 0.5vw;
+}
+
+
 .head {
     display: flex;
     flex-direction: column;
@@ -804,33 +948,28 @@ shop {
 #page2 {
     width: 39vw;
     height: 32vw;
+    z-index: 3;
 }
-#page3,
-#page1 {
+#page1,
+#page2,
+#page3 {
     scale: 0.7;
-}
-.fourtbutton {
-    width: 14vw;
-    height: 6.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 2;
 }
 
-.fourbutton:hover {
-    background-image: url(../images/buttback.svg);
-    width: 14vw;
-    height: 6.5vw;
-    background-size: 100% 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: url(../images/cursor.svg) 1 1, auto;
+#page1:hover {
+    animation: scale 0.5s linear forwards;
+    z-index: 3;
+}
+#page2:hover {
+    z-index: 3;
+    animation: scale2 0.5s linear forwards;
+}
+#page3:hover {
+    z-index: 3;
+    animation: scale3 0.5s linear forwards;
 }
 
-.fourbutton:hover>.butt3-text img {
-    animation: arrowmove2 0.2s linear forwards;
-    cursor: url(../images/cursor.svg) 1 1, auto;
-}
 .bottomdiscr {
     display: flex;
     justify-content: space-between;
@@ -845,8 +984,8 @@ shop {
     width: 24vw;
 }
 #name {
-    font-family: 'PP Neue Montreal';
-    font-size: 11.4vw;
+    font-family: 'Atyp Display';
+    font-size: 11.2vw;
 }
 #description {    
     font-family: 'PP Neue Montreal';
@@ -855,6 +994,7 @@ shop {
 }
 
 /* стили для проектов */
+
 .projectsname {
     margin-top: 4vw;
     margin-left: 5vw;
@@ -864,9 +1004,8 @@ shop {
     flex-direction: column;
     justify-content: space-between;
 }
-.firstproject,
-.secondproject {
-    font-family: 'PP Neue Montreal';
+.firstproject {
+    font-family: 'Atyp Display';
     font-size: 6.5vw;
 }
 .firstproject {
@@ -882,7 +1021,7 @@ shop {
 }
 
 .secondproject p {
-    font-family: 'PP Neue Montreal';
+    font-family: 'Atyp Display';
     font-size: 6.5vw;
     width: 68vw;
 }
@@ -893,18 +1032,19 @@ shop {
     height: 1.4vw;
     align-items: center;
     margin-left: 2vw;
+    z-index: 3 ;
 }
 .fivebutton:hover > #arrow2 {
     animation: arrowmove2 0.2s linear forwards;
     cursor: url(../images/cursor.svg) 1 1, auto;
 }
 .fivebutton img {
-    width: 2.3vw;
-    height: 2vw;
+    width: 2vw;
+    height: 1.7vw;
 }
 .fivebutton p {
     font-family: 'PP Neue Montreal';
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     margin-left: 1vw;
 }
 .butt5back {

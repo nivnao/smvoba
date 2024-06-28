@@ -336,3 +336,60 @@
         transform: translateX(100px);
     }
 }
+@keyframes scale {
+    100% {
+        transform: scale(2) translateX(22vw);
+    }
+}
+@keyframes scale2 {
+    100% {
+        transform: scale(2);
+    }
+}
+@keyframes scale3 {
+    100% {
+        transform: scale(2) translateX(-23vw) ;
+    }
+}
+@keyframes photoscroll {
+    50% {
+        transform: translateX(-400vw);
+    }
+}
+
+@keyframes photomovebook1 {
+    80% {
+        transform: scale(1.1);
+        top: 22vw;
+    }
+   100% {
+        top: 15vw;
+        transform: scale(0.8);
+
+    }
+}
+
+@keyframes photomovebook2 {
+    80% {
+        transform: scale(1.1);
+        top: 17vw;
+    }
+
+    100% {
+        top: 19vw;
+        transform: scale(0.8);
+
+    }
+}
+@keyframes photomovebook3 {
+    80% {
+        transform: scale(1.1);
+        top: 20vw;
+    }
+
+    100% {
+        top: 24vw;
+        transform: scale(0.8);
+
+    }
+}
